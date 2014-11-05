@@ -17,7 +17,7 @@ query = '?start='
 
 url = URL('http://www.beeradvocate.com/beer/style/')
 domMain = Document(url.download(Cache=True))
-tableMain = domMain.by_tag('table’)[0]
+tableMain = domMain.by_tag('table')[0]
 beerStyles = tableMain.by_tag('a')
 
 for eachStyle in beerStyles:
